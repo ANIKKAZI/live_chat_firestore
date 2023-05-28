@@ -1,7 +1,6 @@
 import React, {useState,useEffect,useRef} from 'react'
 import { firebaseAuth,firebaseDb } from '../fireBaseConfg'
 import "firebase/compat/firestore";
-import {useCollectionData} from 'react-firebase-hooks/firestore';
 import Outbox from './Outbox';
 function Chat() {
   let [chat , setChatMessage] = useState([]);
