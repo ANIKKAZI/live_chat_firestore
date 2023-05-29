@@ -5,7 +5,7 @@ import 'firebase/compat/auth';
 import { firebaseAuth } from '../fireBaseConfg';
 function Authentication() {
 
-    const googleSignIn = async () => {
+    const googleLogiIn = async () => {
         try {
           const authProvider = new firebase.auth.GoogleAuthProvider(); //imp
          // console.log(authProvider)
@@ -16,8 +16,8 @@ function Authentication() {
         }
       };
   return (
-    <div>
-        <input type='button' value='Sign In' onClick={googleSignIn}/>
+    <div className='login-container'>
+        <input type='button' value='Log In'  className= 'login-button' onClick={googleLogiIn}/>
     </div>
   )
 }

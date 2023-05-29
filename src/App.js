@@ -7,7 +7,6 @@ function App() {
   let [user] = useAuthState(firebaseAuth);
   return (
     <div>
-     I can do it...
     {user && <Chat></Chat>}
     {!user && <Authentication></Authentication>} 
    
